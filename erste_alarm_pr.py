@@ -26,7 +26,7 @@ def alarm():
 
         if alarm_zeit_speichern:
             elapsed_time = (datetime.datetime.now() - alarm_zeit_speichern).total_seconds()
-            winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
+            winsound.PlaySound("sound.wav", winsound.SND_ALIAS)
             if elapsed_time > 60:
                 print('Alarm stoppt jetzt.')
                 winsound.PlaySound(None, winsound.SND_PURGE)
